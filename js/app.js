@@ -26,6 +26,9 @@ function obtenerHora() {
      if(hora == 0){
         hora = 12;
      }
+     if(hora < 10) {
+        hora = '0' + hora;
+     }
 
      if(minuto < 10) {
         minuto = '0' + minuto;
